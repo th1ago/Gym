@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block head %}
+        <title>Thiago Murakami</title>
+    {% endblock %}
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="/style.css" rel="stylesheet"/>
+    <link href="/animes.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="links">
+            <a href="/">Sobre</a>
+            <a href="/anime">Anime</a>
+        </div>
+    </header>
+    
+    {% block content %}
+
+    {% endblock %}
+    
+</body>
+</html>

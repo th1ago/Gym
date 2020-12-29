@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Sobre - Thiago Murakami</title>
+{% endblock %}
+
+{% block content %}
+
+<div id="container">
+    <img src="{{index.avatar_url}}" alt="Vegeta DBZ">
+    <h1>{{index.name}}</h1>
+    <h2>{{index.role}}</h2>
+    <p>{{index.description}}</p>
+</div>
+
+<footer>
+    {% for link in index.link %}
+        <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+    {% endfor %}
+</footer>
+
+{% endblock %}
