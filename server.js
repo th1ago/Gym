@@ -4,7 +4,9 @@ const routes = require("./router")
 
 const server = express()
 
+// chamado middle
 server.use(express.static('public'))
+server.use(routes)
 
 // motor de view - tudo que for html
 server.set("view engine", "njk")
