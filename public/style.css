@@ -1,8 +1,9 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:400,700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --color-black: #000000;
+    --color-black: #923146;
     --color-green: #50fa7b;
+    --color-white: #ffffff;
 }
 
 * {
@@ -13,14 +14,23 @@
 
 body {
     background: var(--color-black);
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
 }
 
 header {
     padding: 32px;
     border-bottom: 1px solid #333;
     background: rgba(0, 0, 0, 0, 1);
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a{
+    margin-left: 32px;
+    text-decoration: none;
 }
 
 footer a{
