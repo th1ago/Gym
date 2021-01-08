@@ -45,15 +45,20 @@ header {
 }
 
 .links a:hover {
-    text-decoration: underline;
+    color: var(--color-red);
 }
 
-.links a:hover::after {
+.links a::after{
     content: "";
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: blueviolet;
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 700ms ease-in-out;
 }
