@@ -62,3 +62,12 @@ header {
     width: 100%;
     transition: width 700ms ease-in-out;
 }
+
+/* CARD */
+.card {
+    background-color: var(--color-white);
+    width: 800px;
+    height: 400px;
+
+    margin: 45px auto;
+}
