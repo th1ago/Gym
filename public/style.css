@@ -77,7 +77,24 @@ header {
     grid-template-columns: 1fr 1fr;
     
     box-shadow: 40px 40px 20px 20px black;
+
+    /* animacao */
+    
+    animation-name: up;
+    animation-duration: 700ms;
+    animation-fill-mode: ease-out;
 }
+
+@keyframes up {
+        from {
+            opacity: 0;
+            transition: translateY(15px);
+        }
+        to {
+            opacity: 1;
+        }
+}
+
 
 .avatar{
     background: url(https://source.unsplash.com/collection/2046369/300x300) no-repeat center;    
