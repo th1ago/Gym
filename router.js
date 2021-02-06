@@ -9,6 +9,14 @@ routes.get("/instrutores", function(req, res) {
     return res.render("instrutores/index")
 })
 
+routes.post("/instrutores", function(req, res) {
+    return res.send("recebido")
+})
+
+routes.get("/instrutores/create", function(req, res) {
+    return res.render("instrutores/create")
+})
+
 routes.get("/menbros", function(req, res) {
     return res.send("membros")
 })
