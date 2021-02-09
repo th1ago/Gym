@@ -7,34 +7,41 @@
     <section class="details">
         <h3>Detalhes</h3>
             <div class="item">
+                <div>Avatar Url</div>
+                <div>
+                    <input type="url" name="avatar_url" placeholder="http://">
+                </div>
+            </div>
+
+            <div class="item">
                 <div>Instrutor</div>
                 <div>
-                    <input type="text" name="name">
+                    <input type="text" name="name" placeholder="nome">
                 </div>
             </div>
 
             <div class="item">
                 <div>Idade</div>
-                <div>33</div>
+                <div><input type="date"></div>
             </div>
 
             <div class="item">
                 <div>Sexo</div>
-                <div>M</div>
-            </div>
-
-            <div class="item">
-                <div>Acompanhamento</div>
                 <div>
-                    <span>Musculacao</span>
-                    <span>Crossfit</span>
+                    <span><input type="radio" name="geneder" value="M" checked>Masculino</span>
+                    <span><input type="radio" name="geneder" value="F">Feminino</span>
                 </div>
             </div>
 
             <div class="item">
-                <div>Desde</div>
-                <div>21/1/1988</div>
+                <div>Area de atuacao</div>
+                <div>
+                    <input type="text" name="services">
+                </div>
             </div>
+
+            <button type="submit">Salvar</button>
+            
     </section>
 </form>
 

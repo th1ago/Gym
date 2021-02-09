@@ -4,7 +4,7 @@
     --color-red: #923146;
     --color-green: #50fa7b;
     --color-white: #ffffff;
-    --color-blue: #243cc5;
+    --color-blue: #1b91df;
 }
 
 * {
@@ -68,7 +68,7 @@ header {
 .card {
     background-color: var(--color-white);
     width: 800px;
-    height: 400px;
+    height: 450px;
 
     /* espacamento */
     margin: 45px auto;
@@ -102,7 +102,7 @@ header {
 
 .details .item {
     border-bottom: 1px solid black;
-    padding: 16px 0;
+    padding: 12px 0;
 }
 
 .details .item:last-child {
@@ -112,7 +112,7 @@ header {
 .details h3,
 .details .item div:nth-child(1) {
     line-height: 14px;
-    font-size: 14px;
+    font-size: 16px;
     color: #777777;
     letter-spacing: 0.7px;
     font-weight: normal;
@@ -147,4 +147,33 @@ header {
 
 .avatar{
     background: url(https://source.unsplash.com/collection/2046369/300x300) no-repeat center;    
+}
+
+/* Form */
+input {
+    width: 100%;
+    outline: none;
+    color: #555555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
 }
