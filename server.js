@@ -5,6 +5,7 @@ const routes = require("./router")
 const server = express()
 
 // chamado middle
+server.use(express.urlencoded({ extended: true}))
 server.use(express.static('public'))
 server.use(routes)
 
