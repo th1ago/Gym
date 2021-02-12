@@ -3,6 +3,7 @@ const data = require("./data.json")
 
 
 exports.show = function (req, res) {
+    // send direto para url
     const {id} = req.params
 
     const foundInstructor = data.instrutor.find(function(instrutor) {
