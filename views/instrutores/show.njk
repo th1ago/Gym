@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="card">
+    <section class="avatar"></section>
+    <section class="details">
+        <h3>Detalhes</h3>
+            <div class="item">
+                <div>Instrutor</div>
+                <div>{{instrutor.name}}</div>
+            </div>
+
+            <div class="item">
+                <div>Idade</div>
+                <div>{{instrutor.age}}</div>
+            </div>
+
+            <div class="item">
+                <div>Sexo</div>
+                <div>{{instrutor.geneder}}</div>
+            </div>
+
+            <div class="item">
+                <div>Acompanhamento</div>
+                <div>
+                    {% for service in services %}
+                        <span>{{service}}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Desde</div>
+                <div>{{instrutor.created_at}}</div>
+            </div>
+    </section>
+</div>
+
+{% endblock content %}
