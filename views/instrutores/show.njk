@@ -18,13 +18,13 @@
 
             <div class="item">
                 <div>Sexo</div>
-                <div>{{instrutor.geneder}}</div>
+                <div>{{ "Masculino" if instrutor.geneder == "M" else "Feminino"}}</div>
             </div>
 
             <div class="item">
                 <div>Acompanhamento</div>
                 <div>
-                    {% for service in services %}
+                    {% for service in instrutor.services %}
                         <span>{{service}}</span>
                     {% endfor %}
                 </div>

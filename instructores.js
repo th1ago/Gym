@@ -15,8 +15,7 @@ exports.show = function (req, res) {
         // espalhamento everything inside foundInstructor
         ... foundInstructor,
         age: "",
-        geneder: "",
-        services: "",
+        services: foundInstructor.services.split(","),
         created_at: ""
     }
 
