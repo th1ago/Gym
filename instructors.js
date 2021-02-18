@@ -21,7 +21,7 @@ exports.show = function (req, res) {
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at)
     }
 
-    return res.render("instrutores/show", {instrutor})
+    return res.render("instructors/show", {instrutor})
 }
 
 // create
@@ -34,7 +34,7 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, name, niver, geneder, services} = req.body
+    let {avatar_url, name, niver, gender, services} = req.body
 
     niver = Date.parse(niver);
     const created_at = Date.now();
@@ -45,7 +45,7 @@ exports.post = function(req, res) {
         avatar_url,
         name, 
         niver, 
-        geneder, 
+        gender, 
         services,
         created_at,
         id
@@ -54,8 +54,19 @@ exports.post = function(req, res) {
     fs.writeFile("data.json", JSON.stringify(data, null, 2), (err) => {
         if (err) return res.send("Write file error")
 
-        return res.redirect("/instrutores")
-    })
+        return res.redirect("/instructors")
+    })    
+}
 
-    // return res.send(req.body)
+
+exports.edit = function(req, res) {
+    const {id} = req.params
+
+    const foundInstructor = data.instrutor.find(function(instrutor) {
+        return instrutor.id == id
+    })
+    
+    if(!foundInstructor) return res.send("Not found")
+
+    return res.render("instructors/edit", {instrutor: foundInstructor})
 }
