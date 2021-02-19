@@ -1,8 +1,12 @@
 # Gym
 
-Criação de um controle de academia
+Status: 🚧 Prototype Gym 🚀 building... 🚧
+
+Título: Gym bairro
+
+Descrição: Criação de um controle de academia.
 
 
-<h4 align="center"> 
-	🚧  Prototype Gym 🚀 building...  🚧
-</h4>
+https://img.shields.io/github/issues/th1ago/Gym
+
+https://img.shields.io/github/license/th1ago/Gym
