@@ -3,7 +3,7 @@
     {
       "avatar_url": "https://www.google.com/",
       "name": "teste",
-      "niver": -23890291200000,
+      "birth": -23890291200000,
       "gender": "F",
       "services": "TI",
       "created_at": 1613165196163,
@@ -12,7 +12,7 @@
     {
       "avatar_url": "https://www.google.com/",
       "name": "teste2",
-      "niver": -23890291200000,
+      "birth": -23890291200000,
       "gender": "M",
       "services": "teste, paz",
       "created_at": 1613165196163,
@@ -21,7 +21,7 @@
     {
       "avatar_url": "https://www.google.com/",
       "name": "qwe",
-      "niver": 1295654400000,
+      "birth": 1295654400000,
       "gender": "M",
       "services": "web, ux, ui",
       "created_at": 1613438814128,
@@ -30,7 +30,7 @@
     {
       "avatar_url": "https://www.google.com/",
       "name": "poo",
-      "niver": 942278400000,
+      "birth": 942278400000,
       "gender": "M",
       "services": "tudo, faz",
       "created_at": 1613613649214,

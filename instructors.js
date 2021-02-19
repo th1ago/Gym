@@ -16,7 +16,7 @@ exports.show = function (req, res) {
     const instrutor = {
         // espalhamento everything inside foundInstructor
         ... foundInstructor,
-        age: age(foundInstructor.niver),
+        age: age(foundInstructor.birth),
         services: foundInstructor.services.split(","),
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at)
     }
@@ -34,9 +34,9 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, name, niver, gender, services} = req.body
+    let {avatar_url, name, birth, gender, services} = req.body
 
-    niver = Date.parse(niver);
+    birth = Date.parse(birth);
     const created_at = Date.now();
     const id = Number(data.instrutor.length + 1);
 
@@ -44,7 +44,7 @@ exports.post = function(req, res) {
     data.instrutor.push({
         avatar_url,
         name, 
-        niver, 
+        birth, 
         gender, 
         services,
         created_at,
@@ -68,5 +68,10 @@ exports.edit = function(req, res) {
     
     if(!foundInstructor) return res.send("Not found")
 
-    return res.render("instructors/edit", {instrutor: foundInstructor})
+    const instrutor = {
+        ...foundInstructor,
+        birth: date(foundInstructor.birth)
+    }
+
+    return res.render("instructors/edit", {instrutor})
 }
