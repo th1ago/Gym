@@ -95,7 +95,7 @@ exports.put = function(req, res) {
         birth: Date.parse(req.body.birth)   
     }
 
-    date.instructor[index]= instructor
+    data.instrutor[index] = instructor
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
         if(err) return res.send("Write error")
