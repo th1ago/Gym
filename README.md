@@ -7,6 +7,7 @@
 Título: Gym bairro
 
 Descrição: Criação de um controle de academia.
+Listagem de instrutores
 
 <h4 align="center">
 	<img src="https://img.shields.io/github/issues/th1ago/Gym">
