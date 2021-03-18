@@ -68,7 +68,7 @@ header {
 .card {
     background-color: var(--color-white);
     width: 800px;
-    height: 450px;
+    height: 520px;
 
     /* espacamento */
     margin: 45px auto;
@@ -146,7 +146,7 @@ header {
 }
 
 .avatar{
-    background: url(https://source.unsplash.com/collection/2046369/300x300) no-repeat center;    
+    background: url(https://source.unsplash.com/collection/2046369/300x400) no-repeat center;    
 }
 
 /* Form */
@@ -184,4 +184,9 @@ a.button {
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
+}
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: lightcoral;
 }
