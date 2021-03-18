@@ -2,38 +2,26 @@
 
 {% block content %}
 
-<div class="card">
-    <section class="avatar"></section>
-    <section class="details">
-        <h3>Detalhes</h3>
-            <div class="item">
-                <div>Instrutor</div>
-                <div>Thiago</div>
-            </div>
+<div class="card table-container">
+   <table width="100%">
+      <thead>
+         <tr> 
+            <th>instructorses</th>
+            <th>Atendimento</th>
+            <th>Action</th>
+         </tr>
+      </thead>
+      <tbody>
+         {% for instructor in instructors %}
+         <tr>
+            <td>{{instructor.name}}</td>
+            <td>{{instructor.services}}</td>
+            <td><a href="/instructors/{{instructor.id}}">Ver</a></td>
+         </tr>
+         {% endfor %}
 
-            <div class="item">
-                <div>Idade</div>
-                <div>33</div>
-            </div>
-
-            <div class="item">
-                <div>Sexo</div>
-                <div>M</div>
-            </div>
-
-            <div class="item">
-                <div>Acompanhamento</div>
-                <div>
-                    <span>Musculacao</span>
-                    <span>Crossfit</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div>Desde</div>
-                <div>21/1/1988</div>
-            </div>
-    </section>
+      </tbody>
+   </table>
 </div>
 
 {% endblock content %}

@@ -12,11 +12,11 @@
 
             {% include 'instructors/fields.njk' %}
 
-            <input type="hidden" name="id" value={{instrutor.id}}>
+            <input type="hidden" name="id" value={{instructors.id}}>
     </form>
 
         <form id="form-delete" action="/instructors?_method=DELETE" method="POST">            
-            <input type="hidden" name="id" value={{instrutor.id}}>
+            <input type="hidden" name="id" value={{instructors.id}}>
             <button type="submit">Deletar</button>
         </form>
     
