@@ -9,7 +9,7 @@ routes.get("/", function(req, res) {
 })
 
 routes.get("/instructors", instructors.index)
-routes.get("/instructors/create", )
+routes.get("/instructors/create", instructors.create)
 routes.get("/instructors/:id", instructors.show)
 routes.get("/instructors/:id/edit", instructors.edit)
 routes.post("/instructors", instructors.post)
