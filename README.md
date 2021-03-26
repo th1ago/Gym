@@ -7,7 +7,7 @@
 Título: Gym bairro
 
 Descrição: Criação de um controle de academia.
-- Listagem de instrutores 
+- Listagem de instrutores (Ok)
 - Listage dos membros
 - CRUD
 
