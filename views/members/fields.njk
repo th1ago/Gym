@@ -1,34 +1,43 @@
 <div class="item">
     <div>Avatar Url</div>
     <div>
-        <input type="url" name="avatar_url" placeholder="http://" value="{{instructors.avatar_url}}">
+        <input type="url" name="avatar_url" placeholder="http://" value="{{member.avatar_url}}">
     </div>
 </div>
 
 <div class="item">
-    <div>instructors</div>
+    <div>Nome</div>
     <div>
-        <input type="text" name="name" placeholder="nome" value="{{instructors.name}}">
+        <input type="text" name="name" placeholder="Nome do membro" value="{{member.name}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Email</div>
+    <div>
+        <input type="email" name="email" placeholder="email" value="{{member.name}}">
     </div>
 </div>
 
 <div class="item">
     <div>Idade</div>
-    <div><input type="date" name="birth" value="{{instructors.birth}}"></div>
+    <div>
+        <input type="date" name="birth" value="{{member.birth}}">
+    </div>
 </div>
 
 <div class="item">
     <div>Sexo</div>
     <div>
         <span><input type="radio" name="gender" value="M" 
-            {% if instructors.gender == 'M' %}
+            {% if member.gender == 'M' %}
                 checked
             {% endif %}>
             Masculino
         </span>
        
         <span><input type="radio" name="gender" value="F"
-            {% if instructors.gender == 'F' %}
+            {% if member.gender == 'F' %}
                 checked
             {% endif %}>
             Feminino
@@ -37,9 +46,25 @@
 </div>
 
 <div class="item">
-    <div>Area de atuacao</div>
+    <div>Tipo Sanguineo</div>
     <div>
-        <input type="text" name="services" value="{{instructors.services}}">
+        <select name="blood">
+            <option value="A" {% if member.blood == "A"%}selected{% endif %}>A</option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Peso</div>
+    <div>
+        <input type="number" name="weight" value="{{member.weight}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Altura</div>
+    <div>
+        <input type="number" name="height" value="{{member.height}}">
     </div>
 </div>
 
