@@ -7,35 +7,41 @@
     <section class="details">
         <h3>Detalhes</h3>
             <div class="item">
-                <div>instructors</div>
-                <div>{{instructors.name}}</div>
+                <div>Membro</div>
+                <div>{{members.name}}</div>
             </div>
 
             <div class="item">
-                <div>Idade</div>
-                <div>{{instructors.age}}</div>
+                <div>Email</div>
+                <div>{{members.email}}</div>
+            </div>
+
+            <div class="item">
+                <div>Data de aniversario</div>
+                <div>{{members.birth}}</div>
             </div>
 
             <div class="item">
                 <div>Sexo</div>
-                <div>{{ "Masculino" if instructors.gender == "M" else "Feminino"}}</div>
+                <div>{{ "Masculino" if members.gender == "M" else "Feminino"}}</div>
             </div>
 
             <div class="item">
-                <div>Acompanhamento</div>
-                <div>
-                    {% for service in instructors.services %}
-                        <span>{{service}}</span>
-                    {% endfor %}
-                </div>
+                <div>Tipo sanguineo</div>
+                <div>{{members.blood}}</div>
             </div>
 
             <div class="item">
-                <div>Desde</div>
-                <div>{{instructors.created_at}}</div>
+                <div>Altura</div>
+                <div>{{members.height}}</div>
             </div>
 
-            <a href="/instructors/{{instructors.id}}/edit" class="button">Editar</a>
+            <div class="item">
+                <div>Peso</div>
+                <div>{{members.weight}}</div>
+            </div>
+
+            <a href="/members/{{members.id}}/edit" class="button">Editar</a>
 
     </section>
 </div>
