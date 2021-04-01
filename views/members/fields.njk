@@ -1,28 +1,28 @@
 <div class="item">
     <div>Avatar Url</div>
     <div>
-        <input type="url" name="avatar_url" placeholder="http://" value="{{member.avatar_url}}">
+        <input type="url" name="avatar_url" placeholder="http://" value="{{members.avatar_url}}">
     </div>
 </div>
 
 <div class="item">
     <div>Nome</div>
     <div>
-        <input type="text" name="name" placeholder="Nome do membro" value="{{member.name}}">
+        <input type="text" name="name" placeholder="Nome do membro" value="{{members.name}}">
     </div>
 </div>
 
 <div class="item">
     <div>Email</div>
     <div>
-        <input type="email" name="email" placeholder="email" value="{{member.name}}">
+        <input type="email" name="email" placeholder="email" value="{{members.name}}">
     </div>
 </div>
 
 <div class="item">
     <div>Idade</div>
     <div>
-        <input type="date" name="birth" value="{{member.birth}}">
+        <input type="date" name="birth" value="{{members.birth}}">
     </div>
 </div>
 
@@ -30,14 +30,14 @@
     <div>Sexo</div>
     <div>
         <span><input type="radio" name="gender" value="M" 
-            {% if member.gender == 'M' %}
+            {% if members.gender == 'M' %}
                 checked
             {% endif %}>
             Masculino
         </span>
        
         <span><input type="radio" name="gender" value="F"
-            {% if member.gender == 'F' %}
+            {% if members.gender == 'F' %}
                 checked
             {% endif %}>
             Feminino
@@ -49,7 +49,7 @@
     <div>Tipo Sanguineo</div>
     <div>
         <select name="blood">
-            <option value="A" {% if member.blood == "A"%}selected{% endif %}>A</option>
+            <option value="A" {% if members.blood == "A"%}selected{% endif %}>A</option>
         </select>
     </div>
 </div>
@@ -57,14 +57,14 @@
 <div class="item">
     <div>Peso</div>
     <div>
-        <input type="number" name="weight" value="{{member.weight}}">
+        <input type="number" name="weight" value="{{members.weight}}">
     </div>
 </div>
 
 <div class="item">
     <div>Altura</div>
     <div>
-        <input type="number" name="height" value="{{member.height}}">
+        <input type="number" name="height" value="{{members.height}}">
     </div>
 </div>
 
