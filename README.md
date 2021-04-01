@@ -4,6 +4,12 @@
 	Status: 🚧 Prototype Gym 🚀 building... 🚧
 </h4>	
 
+## Utilizando
+- HTML
+- CSS
+- Javascript
+- <a href="https://mozilla.github.io/nunjucks/">Nunjuncks (templating engine)</a>
+
 Título: Gym bairro
 
 Descrição: Criação de um controle de academia.
