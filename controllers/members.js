@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require("../data.json")
-const {age, date} = require("../utils")
+const {date} = require("../utils")
 
 
 exports.index =  function(req, res) {
@@ -20,7 +20,7 @@ exports.show = function (req, res) {
     const members = {
         // espalhamento everything inside foundMember
         ... foundMember,
-        age: age(foundMember.birth),
+        birth: date(foundMember.birth).birthDay
     }
 
     return res.render("members/show", {members})
