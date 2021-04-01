@@ -10,7 +10,7 @@
 - Javascript
 - <a href="https://mozilla.github.io/nunjucks/">Nunjuncks (templating engine)</a>
 
-Título: Gym bairro
+### Título: Gym bairro
 
 Descrição: Criação de um controle de academia.
 - Listagem de instrutores (Ok)
