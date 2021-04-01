@@ -68,7 +68,7 @@ header {
 .card {
     background-color: var(--color-white);
     width: 800px;
-    height: 520px;
+    height: 520px auto;
     color: black;
 
     /* espacamento */
