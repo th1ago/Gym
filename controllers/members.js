@@ -20,7 +20,7 @@ exports.show = function (req, res) {
     const members = {
         // espalhamento everything inside foundMember
         ... foundMember,
-        birth: date(foundMember.birth).birthDay
+        birth: date(foundMember.birth).iso
     }
 
     return res.render("members/show", {members})

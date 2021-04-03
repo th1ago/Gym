@@ -7,16 +7,16 @@
     <section class="avatar"></section>
     <section class="details">
 
-    <form method="POST" action="/instructors?_method=PUT">
-            <h3>Editar instrores</h3>
+    <form method="POST" action="/members?_method=PUT">
+            <h3>Editar Membro</h3>
 
-            {% include 'instructors/fields.njk' %}
+            {% include 'members/fields.njk' %}
 
-            <input type="hidden" name="id" value={{instructors.id}}>
+            <input type="hidden" name="id" value={{members.id}}>
     </form>
 
-        <form id="form-delete" action="/instructors?_method=DELETE" method="POST">            
-            <input type="hidden" name="id" value={{instructors.id}}>
+        <form id="form-delete" action="/members?_method=DELETE" method="POST">            
+            <input type="hidden" name="id" value={{members.id}}>
             <button type="submit">Deletar</button>
         </form>
     
