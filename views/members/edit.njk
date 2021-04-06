@@ -23,4 +23,15 @@
     </section>
 </div>
 
+<scrip>
+    const formDelete = document.querySelector("#form-delete")
+    formDelete.addEventListener("submit", function(event){
+        const confirmation = confirm("Deseja excluir")
+            if(!confirmation) {
+                event.preventDefault()
+            }
+        })
+
+</scrip>
+
 {% endblock content %}
