@@ -49,7 +49,12 @@
     <div>Tipo Sanguineo</div>
     <div>
         <select name="blood">
-            <option value="A" {% if members.blood == "A"%}selected{% endif %}>A</option>
+            <option value="A-" {% if members.blood == "A"%}selected{% endif %}>A-</option>
+            <option value="A+" {% if members.blood == "A"%}selected{% endif %}>A+</option>
+            <option value="B-" {% if members.blood == "A"%}selected{% endif %}>B-</option>
+            <option value="B+" {% if members.blood == "A"%}selected{% endif %}>B+</option>
+            <option value="O" {% if members.blood == "A"%}selected{% endif %}>O</option>
+            <option value="AB" {% if members.blood == "A"%}selected{% endif %}>AB</option>
         </select>
     </div>
 </div>
