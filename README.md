@@ -1,9 +1,5 @@
 # Gym
 
-<h4 align="center">
-	Status: 🚧 Prototype Gym 🚀 building... 🚧
-</h4>	
-
 ## Utilizando
 - HTML
 - CSS
