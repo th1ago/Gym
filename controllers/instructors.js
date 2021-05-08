@@ -3,6 +3,13 @@ const data = require("../data.json")
 const {age, date} = require("../utils")
 
 
+// shorthand
+// module.exports = {
+//     index(req, res){},
+//     show(req, res){},
+//     create(req, res){},
+// }
+
 exports.index =  function(req, res) {
     return res.render("instructors/index", {instructors: data.instructors})
 }
